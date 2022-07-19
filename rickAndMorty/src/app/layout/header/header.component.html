@@ -1,1 +1,10 @@
-<p>header works!</p>
+<header>
+  <nav>
+    <h3>Rick And Morty</h3>
+    <ul>
+      <li><a [routerLink]="['/character']" routerLinkActive="router-link-active" >Character</a></li>
+      <li><a [routerLink]="['/locations']" routerLinkActive="router-link-active">Locations</a></li>
+      <li><a [routerLink]="['/episodes']" routerLinkActive="router-link-active">Episodes</a></li>
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,50 @@
+header{
+  width: 100%;
+  height: 90px;
+  background-color: #000000;
+  padding: 1rem;
+
+  nav{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    h3{
+      color: #ffffff;
+      font-weight: 800;
+      font-size: 2rem;
+    }
+
+    ul{
+      list-style: none;
+      display: flex;
+
+      li{
+
+        a{
+          color: #ffffff;
+          text-decoration: none;
+          font-size: 1.8rem;
+          padding: 1rem;
+          font-weight: bold;
+
+          &:hover{
+            color: #000000;
+            background-color: #ffffff;
+            border-radius: 10px;
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+
+          }
+          &.router-link-active{
+            color: #4433FF;
+          }
+        }
+      }
+    }
+
+  }
+}

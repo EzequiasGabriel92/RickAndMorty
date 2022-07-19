@@ -1,0 +1,19 @@
+.ngx-datatable{
+  background-color: aqua;
+
+  .datatable-header{
+    background-color: red !important;
+  }
+
+  .datatable-body{
+
+    .datatable-body-cell-label{
+      font-size: 1.4rem;
+
+    }
+  }
+}
+
+.datatable-header{
+  background-color: red !important;
+}
