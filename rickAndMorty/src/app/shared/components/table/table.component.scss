@@ -1,5 +1,6 @@
 .ngx-datatable{
-  background-color: aqua;
+  border-radius: 10px;
+  padding: 1rem;
 
   .datatable-header{
     background-color: red !important;
@@ -11,6 +12,26 @@
       font-size: 1.4rem;
 
     }
+  }
+
+  .datatable-header .datatable-header-cell.sortable .datatable-header-cell-wrapper{
+    font-size: 2rem;
+  }
+
+  a{
+    background-image: URL('assets/icons/icon_view.svg');
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+
   }
 }
 

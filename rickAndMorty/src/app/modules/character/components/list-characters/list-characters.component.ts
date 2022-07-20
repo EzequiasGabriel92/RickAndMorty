@@ -11,7 +11,7 @@ import { CharacterService } from '../../service/character.service';
 export class ListCharactersComponent implements OnInit {
 
   itemsCharacters$!: Observable<modelCharacter[]>;
-  columns = [{prop: 'name'}, {prop: 'status'}, {prop: 'species'}, { name: 'Gender' }]
+  columns = [{name: 'Name', prop: 'name'}, {name: 'Status', prop: 'status'}, {prop: 'species'}, { name: 'Gender' }]
 
   constructor(
     private characterService: CharacterService

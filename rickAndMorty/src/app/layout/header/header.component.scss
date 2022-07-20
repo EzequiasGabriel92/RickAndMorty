@@ -11,11 +11,31 @@ header{
     flex-wrap: wrap;
     justify-content: space-between;
 
-    h3{
-      color: #ffffff;
-      font-weight: 800;
-      font-size: 2rem;
+    .content-logo{
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h3{
+        color: #ffffff;
+        font-weight: 800;
+        font-size: 2rem;
+      }
+
+      figure{
+        margin: 1rem;
+        padding: 0;
+
+        img{
+          border-radius: 50%;
+          width: 50px;
+        }
+      }
+
     }
+
+
 
     ul{
       list-style: none;

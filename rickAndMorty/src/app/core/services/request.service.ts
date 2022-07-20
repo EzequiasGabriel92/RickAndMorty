@@ -14,6 +14,7 @@ export class RequestService {
 
   get(method: string): Observable<any>{
     const url = `${environment.url_base}${method}`;
+    console.log(url);
     return this.httpClient.get(url)
   }
 }

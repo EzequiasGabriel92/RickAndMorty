@@ -13,9 +13,13 @@ export class CharacterService {
   getCharacters(): Observable <modelCharacter[]>{
     return this.requestService.get(this.method).pipe(
       map(res => {
-        console.log(res);
         return res.results
       })
     );
+  }
+
+  getCharacter(id: number): Observable <any>{
+    const url = `${this.method}/${id}`
+    return this.requestService.get(url);
   }
 }

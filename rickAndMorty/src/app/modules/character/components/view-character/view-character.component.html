@@ -1,1 +1,46 @@
-<p>view-character works!</p>
+<section>
+
+  <div class="header-content">
+    <h3 class="">Character  {{(itemsCharacter$ | async).name}}</h3>
+  </div>
+
+  <div class="content-detail">
+    <div class="card">
+
+      <figure>
+        <img [src]="(itemsCharacter$ | async).image" alt="">
+      </figure>
+
+      <div class="card-detail">
+
+        <div class="">
+          <label for="">Name</label>
+          <label for="">{{(itemsCharacter$ | async).name}}</label>
+        </div>
+
+        <div>
+          <label for="">Species</label>
+          <label for="">{{(itemsCharacter$ | async).species}}</label>
+        </div>
+
+        <div>
+          <label for="">Status</label>
+          <label for="">{{(itemsCharacter$ | async).status}}</label>
+        </div>
+
+        <div>
+          <label for="">Gender</label>
+          <label for="">{{(itemsCharacter$ | async).gender}}</label>
+        </div>
+
+        <div>
+          <label for="">Created</label>
+          <label for="">{{(itemsCharacter$ | async).created}}</label>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+</section>

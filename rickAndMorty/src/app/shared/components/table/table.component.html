@@ -1,7 +1,29 @@
 <ngx-datatable
+  class="material striped"
   [rows]="items$ | async"
   [columns]="columns"
   [limit]="10"
   [headerHeight]="50"
+  [footerHeight]="50"
+  [rowHeight]="40"
+  [scrollbarV]="false"
+  [scrollbarH]="true"
+  [columnMode]="ColumnMode.force"
 >
+
+  <ng-container
+    *ngFor="let column of columns"
+  >
+  <ngx-datatable-column [prop]="column.prop" [name]="column.name" [width]="column.prop == 'Name'? 300: 150">
+
+  </ngx-datatable-column>
+  </ng-container>
+
+
+    <ngx-datatable-column name="View" prop="actions" [width]="150">
+      <ng-template ngx-datatable-cell-template let-row="row">
+        <a [routerLink]="['/character/view-character/'+row.id]" ></a>
+      </ng-template>
+
+    </ngx-datatable-column>
 </ngx-datatable>

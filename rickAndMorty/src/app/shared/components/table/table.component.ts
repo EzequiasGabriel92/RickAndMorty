@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ColumnMode } from '@swimlane/ngx-datatable';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -11,6 +12,7 @@ export class TableComponent implements OnInit {
   @Input() items$!: Observable<any[]>;
   @Input() columns!: any;
 
+  ColumnMode = ColumnMode;
   constructor() { }
 
   ngOnInit(): void {
